@@ -1,8 +1,19 @@
 body {
     font-family: sans-serif;
+    background-image: url(fire_bg.png);
+    background-size: cover;
 }
 
-h1, h2, p, footer {
+.toc {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: burlywood;
+}
+
+h1, h2, p, footer, main {
     text-align: center;
 }
 
@@ -10,3 +21,8 @@ h1, h2, p, footer {
     font-style: italic;
 }
 
+hr {
+    background-color: brown;
+    border-color: brown;
+    height: 2px;
+}
