@@ -2,6 +2,11 @@ body {
     font-family: sans-serif;
 }
 
-h1, h2, p {
+h1, h2, p, footer {
     text-align: center;
 }
+
+.established {
+    font-style: italic;
+}
+
