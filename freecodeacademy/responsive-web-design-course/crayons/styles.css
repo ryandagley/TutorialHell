@@ -82,3 +82,26 @@ h1 {
   );
   box-shadow: 0 0 20px 0 blue;
 }
+
+.purple {
+  background: linear-gradient(
+    rgb(122, 74, 14),
+    rgb(186, 85, 211),
+    rgb(162, 27, 27)
+  );
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.orange {
+  background: linear-gradient(#b35500, #ffa500, #ff8c00);
+  box-shadow: 0 0 20px 0 #50381a;
+}
+
+.pink {
+  background: linear-gradient(
+    hsl(329, 75%, 56%),
+    hsl(334, 63%, 50%),
+    hsl(334, 39%, 31%)
+  );
+  box-shadow: 0 0 20px 0 pink;
+}
