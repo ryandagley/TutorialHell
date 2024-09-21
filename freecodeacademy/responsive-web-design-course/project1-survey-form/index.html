@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-
+<html lang="en">
+<head>
 <!-- Acceptance Criteria: https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form -->
-
-<head></head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initialscale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <h1 id="title">Peanut Butter Survey Form</h1>
+</head>
 <body>
-    <h1 id="title"> Title </h1>
-        <p id="description"> Some description text</p>
-        <form id="survey-form">
-            <input id="name" type="text">Name
-        </form>
-</body>
+  <p id="description">We need to know which one is the best.</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">
+      <input id="name" name="name" type="text" required placeholder="Name">Name
+      </label>
+    <label id="email-label" for="email">
+      <input id="email" name="email" type="email" placeholder="E-mail" required>Email</label>
+
+    <label id="number-label" for="number">
+      <input id="number" name="number" placeholder="Age" type="number" min="13" max="120" >Age</label>
+
+   <legend>Are you a frequent Peanut Butter eater?</legend>
+    <label id="dropdown-label" for="dropdown" >
+      <select id="dropdown" name="dropdown">
+        <option value="">(select one)</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      </label>
+
+
+  <fieldset>
+    <legend>Crunchy or Creamy consistency?</legend>
+    <label for="crunchy" id="radio-label">
+      <input id="crunchy" name="consistency" value="crunchy" type="radio" checked>Crunchy</label>
+    <label for="creamy" id="radio-label">
+      <input id="creamy" name="consistency" value="creamy" type="radio">Creamy</label>
+    <label for="shop_at" id="shop_at-label">
+  </fieldset>
+
+
+  <fieldset>
+      <input id="online" type="checkbox" value="online">Online</label>
+      <input id="in-store" type="checkbox" value="in-store">In-stores</label>
+  </fieldset>
+    <label for="comment" id="comment-label" >Additional comments:
+      <textarea id="comment" name="comment" rows="3" cols="30" placeholder="What I like about peanut butter...">
+        </textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+  </form>
+
+  </body>
+
+</html> 
